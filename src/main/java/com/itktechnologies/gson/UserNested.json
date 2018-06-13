@@ -1,0 +1,12 @@
+{
+	"name": "Alexandre Geraldo",
+	"email": "ageraldo@itktechnologies.com",
+	"age": 39,
+	"isDeveloper": true,
+	"userAddress": {
+		"street": "Capstone CT", 
+		"houseNumber": "1020",
+		"city": "Suwanee",
+		"country": "USA"
+	}
+}

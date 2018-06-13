@@ -1,0 +1,21 @@
+{
+	"name": "Future Studio Bakery",
+	"item": [
+		{
+			"name": "Steak",
+			"price": 20.0
+		},
+		{
+			"name": "Egg",
+			"price": 10.0
+		},
+		{
+			"name": "Coffee",
+			"price": 1.5
+		},
+		{
+			"name": "Water",
+			"price": 1.0
+		}
+	]
+}
