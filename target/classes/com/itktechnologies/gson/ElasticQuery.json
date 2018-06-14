@@ -1,0 +1,45 @@
+#EEDEE
+GET coffeebean/_search
+{
+  "size": 0,
+  "query": {
+    "range": {
+      "tran_inv_amt": {
+        "gte": 0
+      }
+    }
+  }, 
+  "_source": ["company", "vendor", "invoice_dte", "tran_inv_amt"], 
+  "aggs": {
+    "company": {
+      "terms": {
+        "field": "company",
+        "min_doc_count": 2
+      },
+      "aggs": {
+        "vendor": {
+          "terms": {
+            "field": "vendor.keyword",
+            "min_doc_count": 2
+          },
+          "aggs": {
+            "invoice_dte": {
+              "terms": {
+                "field": "invoice_dte.keyword",
+                "min_doc_count": 2
+              },
+              "aggs": {
+                "tran_inv_amt": {
+                  "terms": {
+                    "field": "tran_inv_amt",
+                    "min_doc_count": 2
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

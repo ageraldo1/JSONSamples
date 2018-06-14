@@ -1,0 +1,17 @@
+{
+  "firstName":  "Alexandre",
+  "lastName":  "Geraldo",
+  "age":  39,
+  "address":  {
+    "streeName":  "1020 Captstone CT",
+    "city":  "Suwanee",
+    "state":  "GA",
+    "zipcode":  "30024"
+  },
+  "phoneNumber":  [
+    {"type": "home", "number": "678-999-2420"},
+    {"type": "mobile", "number": "678-387-9240"}
+  ],
+  "single": false,
+  "skill": null
+}
